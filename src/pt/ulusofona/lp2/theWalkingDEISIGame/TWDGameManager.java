@@ -48,7 +48,7 @@ import java.util.Scanner;
 
 public int[]getWorldSize(){
         int[] bairroCoordenadas= new int[2];
-        bairroCoordenadas[0]=2;
+
 
 
         return bairroCoordenadas;
@@ -59,6 +59,9 @@ public int getInitialTeam(){
         }
 
 public List<Humano> getHumans(){
+
+
+
         return null;
         }
 
