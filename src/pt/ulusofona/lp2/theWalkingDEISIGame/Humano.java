@@ -16,13 +16,10 @@ public class Humano {
         return "";
     }
     public String toString(){
-        Equipa nomeDaEquipa= new Equipa();
-        Tipo tipoDaCriatura= new Tipo();
-        if(tipoDaCriatura=tipoDaCriatura.zombie){
-            Equipamentos quantidadeDeEquipamentos= new Equipamentos();
-            return iDHumano+" | "+ tipoDaCriatura.zombie+" | "+nomeDaEquipa.nomeDaEquipa  +" | "+"avo"+" | "+quantidadeDeEquipamentos.quantidadeDeEquipamentos;
+
+            return iDHumano+" | "+ "ola"+" | "+ "ola" + " "+"jk"+" "+"ola";
         }
 
 
     }
-}
+

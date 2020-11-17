@@ -3,13 +3,14 @@ package pt.ulusofona.lp2.theWalkingDEISIGame;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Scanner;
 
  class TWDGameManager {
     public TWDGameManager() {
     }
-
+     LinkedHashMap<String, String> ficheiro1 = new LinkedHashMap<String, String>();
     public boolean startGame(File ficheiroInicial) {
         File nomeFicheiro = ficheiroInicial;
         try {
@@ -23,6 +24,18 @@ import java.util.Scanner;
 // partir a linha no caractere separador
                 String dados[] = linha.split(":");
 
+                int iDCriatura=Integer.parseInt(dados[0]);
+                int iDTipo= Integer.parseInt(dados[1]);
+                String nomeCriatura= dados[2];
+                int x= Integer.parseInt(dados[3]);
+                int y= Integer.parseInt(dados[4]);
+                int iDEquipamento= Integer.parseInt(dados[5]);
+                int nColunas=Integer.parseInt(dados[6]);
+                int nLinhas=Integer.parseInt(dados[7]);
+                int iDEquipaIniciaJogo= Integer.parseInt(dados[8]);
+                ficheiro1.put(String.valueOf(iDCriatura),nColunas+" "+nLinhas);
+
+
             }
             leitorFicheiro.close();
             return true;
@@ -33,13 +46,12 @@ import java.util.Scanner;
 
 
 
-
-
-
-
-
 public int[]getWorldSize(){
-        return null;
+        int[] bairroCoordenadas= new int[2];
+        bairroCoordenadas[0]=2;
+
+
+        return bairroCoordenadas;
         }
 
 public int getInitialTeam(){
@@ -86,6 +98,8 @@ public boolean hasEquipment(int
         creatureId,int equipmentTypeId){
         return true;
         }
+
+
 
 
         }
