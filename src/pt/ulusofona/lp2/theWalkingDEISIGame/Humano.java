@@ -17,7 +17,7 @@ public class Humano {
     }
     public String toString(){
 
-            return iDHumano+" | "+ "olasj"+" | "+ "ola" + " "+"jk"+" "+"ola";
+            return iDHumano+" | "+ "oljasj"+" | "+ "ola" + " "+"jk"+" "+"ola";
         }
 
 
